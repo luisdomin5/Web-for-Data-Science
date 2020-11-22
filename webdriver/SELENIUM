@@ -1,0 +1,11 @@
+from selenium import webdriver
+
+driver = webdriver.Chrome("C:\Python38\chromedriver.exe")
+
+driver.get("https://www.thinkmarkets.com/en/")
+
+driver.find_element_by_link_text("Technical analysis").click()
+
+driver.find_element_by_css_selector("stylesheet").send_keys("Markets")
+
+#XPATH XML documents
